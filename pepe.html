@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Since you are cute..</h1>
+                <h2 class = "bottom_text"> Would you want to be the thymine to my adenine this Valentine's day? </h2>
+                <div class="image_container">
+                    <img src="https://i.pinimg.com/564x/64/75/f6/6475f6ae87264a3d926d87d7437e9cac.jpg" alt="chemistry">
+                </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">YES</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="()">no...</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "valentine.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    } 
+                </script> 
+               
+            </div>
+        </div>
+       
+    </body> 
+</html>
